@@ -1,0 +1,67 @@
+{
+  "name": "Prince Core Blender Assets",
+  "version": "1.0.0",
+  "privacy": "public-safe subset; excludes private animal models, chapter-specific assets, narration, videos and credentials",
+  "blender": "4.5.14 LTS build tested",
+  "licenses": {
+    "original_procedural_code_and_generated_people_props": "MIT (root LICENSE)",
+    "fire_flipbooks": "CC0-1.0 (textures/fire-cc0/CC0-1.0.txt; per-asset source and converted hashes in manifest.json)"
+  },
+  "libraries": {
+    "blender/prince-core-people.blend": {
+      "bytes": 1103591,
+      "sha256": "388cc8c5e3b3136bf1fdbbef99ce496729ad1cff790b675a25726cb6a430c2b6"
+    },
+    "blender/prince-core-props.blend": {
+      "bytes": 837238,
+      "sha256": "070e4717882c62cf82bdfc6f25160c6e1850a58117b393cebb3409125066807e"
+    }
+  },
+  "source_files": {
+    "blender/human_silhouettes.py": {
+      "bytes": 5040,
+      "sha256": "d5ae0a96ce68292509a9ce5b304f2c4fd2b011ddcffad2c6db489760b943f85e"
+    },
+    "blender/narrative_props.py": {
+      "bytes": 3965,
+      "sha256": "8dbdcfd14f932c5910e7670d55387a9f41157ea6f5c4daf7c836ae06a69720df"
+    },
+    "blender/append_assets.py": {
+      "bytes": 1244,
+      "sha256": "5b3b4e93f82fef19f6fecd9d7dec64ec18bda884502bc2c0652149f236dfa088"
+    }
+  },
+  "previews": {
+    "previews/people-contact.png": {
+      "bytes": 732541,
+      "sha256": "7011202ccf976748f4018f20e9462f6c9eff1e82b5cc30b6c1d029b1d6998f8d"
+    },
+    "previews/props-contact.png": {
+      "bytes": 737364,
+      "sha256": "aeb74d116b7e0847b72258e2161b37fef2291083f6acc60affee3e72f5100176"
+    }
+  },
+  "fire_assets": {
+    "Flame02_16x4.png": {
+      "bytes": 1719635,
+      "sha256": "0b3147b85c72b10b93430db6c694688509937d8932a54b13c150763c40f630e8"
+    },
+    "Flame03_16x4.png": {
+      "bytes": 536021,
+      "sha256": "4b94397d48f5154746e4cda6d5ba4509490e351acec17658fc81a0a8614efeed"
+    },
+    "WispySmoke01_8x8.png": {
+      "bytes": 1083724,
+      "sha256": "6164794c9c02171d8bc0a3d3b20ee54d21da36171ed08b35915a4222292ce015"
+    },
+    "WispySmoke02_8x8.png": {
+      "bytes": 1179857,
+      "sha256": "fe301ec61a96d718fd871a84f7b588b8d0ea8090e8f78c803f6150379540cc72"
+    }
+  },
+  "validation": {
+    "fresh_factory_append": "PASS on source revision before public packaging; rerun ./verify_library.py for packaged copy",
+    "natural_gait": "not claimed",
+    "full_chapter_render": "not claimed"
+  }
+}

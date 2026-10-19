@@ -1,0 +1,32 @@
+{
+  "people": {
+    "file": "blender/prince-core-people.blend",
+    "collections": [
+      "White Ruler",
+      "White Ordinary",
+      "White Soldier",
+      "Black Ruler",
+      "Black Ordinary",
+      "Black Soldier"
+    ],
+    "rigged": false,
+    "roles": "ruler, ordinary, soldier; ruler wears small crown; ordinary/soldier have contrasting belt"
+  },
+  "props": {
+    "file": "blender/prince-core-props.blend",
+    "collections": [
+      "Agreement",
+      "Net",
+      "Veil",
+      "Gate",
+      "House",
+      "Snare"
+    ],
+    "note": "symbolic starters; stage to match source action"
+  },
+  "fire": {
+    "directory": "textures/fire-cc0/",
+    "license": "CC0-1.0"
+  },
+  "scope": "public-safe, reusable assets only"
+}
