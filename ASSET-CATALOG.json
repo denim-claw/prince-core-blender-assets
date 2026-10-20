@@ -67,5 +67,26 @@
       "rough starter house roof",
       "six sampled stills; not full-user QA"
     ]
+  },
+  "coequal_group_fork": {
+    "module": "blender/group_fork.py",
+    "api": [
+      "CoequalGroupFork",
+      "CoequalGroupFork.label_rows",
+      "CoequalGroupFork.update"
+    ],
+    "license": "MIT",
+    "runner": "tests/group_fork_proof.py",
+    "preview": "previews/group-fork-contact.png",
+    "verification": "tests/group-fork-proof-summary.json",
+    "meaning": "one equal-status enumeration, one shared source and multiple outgoing alternatives; not Conjunction or a causal/condition/probability assertion",
+    "coordinates": "XZ plane, +Z up, view from -Y; common-parent local; screen-space labels caller-composited",
+    "membership": "distinct nonempty items; exhaustive ordered row partition; no missing or duplicated list members",
+    "limitations": [
+      "static container/stem with seekable branch reveal",
+      "label row anchors are metadata, not automatic typography/occlusion solving",
+      "caller supplies destination attachment points and semantic wording",
+      "four sampled stills, no continuous animation or source-fidelity approval"
+    ]
   }
 }

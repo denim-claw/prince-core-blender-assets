@@ -1,12 +1,13 @@
 {
   "name": "Prince Core Blender Assets",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "privacy": "public-safe original generic toolkit/preview; excludes production scenes, book text, storyboard, narration, audio/video, private model data and credentials",
   "blender": "4.5.14 LTS build tested",
   "licenses": {
     "original_procedural_code_and_generated_people_props": "MIT (root LICENSE)",
     "fire_flipbooks": "CC0-1.0 (textures/fire-cc0/CC0-1.0.txt; per-asset source and converted hashes in manifest.json)",
-    "native_hybrid_toolkit_and_generic_preview": "MIT (root LICENSE); font software not bundled"
+    "native_hybrid_toolkit_and_generic_preview": "MIT (root LICENSE); font software not bundled",
+    "coequal_group_fork": "MIT (root LICENSE); proof uses separately installed Pillow default font, no font software bundled"
   },
   "libraries": {
     "blender/prince-core-people.blend": {
@@ -46,6 +47,14 @@
     "verify_library.py": {
       "bytes": 1251,
       "sha256": "d062c8608930d4de06402e44c1cf65b95651f4c9d9b011c294aae543d618178e"
+    },
+    "blender/group_fork.py": {
+      "bytes": 4656,
+      "sha256": "e36702ebd14e3799309f4ec15ceddf3267bd78f8d430b344506ff45c126a793f"
+    },
+    "tests/group_fork_proof.py": {
+      "bytes": 11485,
+      "sha256": "b0c42a43b554bd06e2211f38c1b8a895f0678edebf7dd39b4cc584c7414d7908"
     }
   },
   "previews": {
@@ -60,6 +69,10 @@
     "previews/hybrid-contact.png": {
       "bytes": 231347,
       "sha256": "e79f2cd7a0ded792b520e90efc17c125a1503afb9d32e426682b62ac35d4e8d8"
+    },
+    "previews/group-fork-contact.png": {
+      "bytes": 92008,
+      "sha256": "f80235181aea33b5e6b0b29efa6ca8ff03e1bc40ee1d7da81242b8f85e27492c"
     }
   },
   "fire_assets": {
@@ -81,7 +94,7 @@
     }
   },
   "validation": {
-    "fresh_factory_append": "PASS: all 12 original collections appended in a fresh factory-startup Blender 4.5.14 process; 17 manifest entries hash-checked",
+    "fresh_factory_append": "PASS: all 12 original collections appended in a fresh factory-startup Blender 4.5.14 process; 21 manifest entries hash-checked",
     "hybrid_proof": "PASS: six native 1280x720 Workbench AA16 stills + six screen-labelled PNGs; see hashed proof summary",
     "camera": "PASS: held signatures and sampled mesh bounds at rendered phases",
     "connector": "PASS: six modes, moving-anchor reverse seeks, conjunction endpoint attachment; max endpoint error 3.04085511524415e-07",
@@ -91,12 +104,20 @@
     "natural_gait": "not claimed; no world-space foot-lock IK",
     "full_chapter_render": "not claimed",
     "full_user_qa": "not performed",
-    "continuous_animation": "not rendered; sampled stills only"
+    "continuous_animation": "not rendered; sampled stills only",
+    "group_fork": "PASS: four native 1280x720 AA16 stills (one repeated phase), 8 invalid partitions/layouts rejected; exhaustive five-item membership; translated common parent; settled visible destination attachment max error 3.5886748369909214e-07",
+    "group_fork_seek": "PASS: reverse transforms; repeated phase decoded RGB mean difference 0.0; sampled pixel change 1.015333839699074",
+    "hybrid_regression": "PASS: existing six-frame native proof rerun unchanged; abstract/concrete mean pixel deltas 0.4973994502314814 / 1.1600531684027777",
+    "group_fork_portability": "PASS: fresh three-file copy, factory-startup replay; four native frames RGB-identical on the same machine"
   },
   "verification_files": {
     "tests/hybrid-proof-summary.json": {
       "bytes": 6489,
       "sha256": "f14f297f4ebcfc2fd2ccc4ad9df839233c7e001c893e2620f11a7c4d207b0a3e"
+    },
+    "tests/group-fork-proof-summary.json": {
+      "bytes": 8312,
+      "sha256": "4ba3940362b9fc6396eff90c639b24b8943f69b4e90a4886e099c2f7a72d5426"
     }
   }
 }

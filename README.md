@@ -52,6 +52,35 @@ link.update(1.0)  # both outer endpoints attached; no permission arrowhead
 
 Concrete events use actors/meaningful props; abstract relations use concise direct Korean labels and meaningful connectors in the same native Blender pipeline. Avoid arbitrary numbered badges and legend indirection. Hold each camera; change framing only at hard cuts. The demo renders two independent held shots, not a camera transition. Titles/labels are composited in screen space **after** rendering native mesh geometry, not world-space text planes.
 
+## Coequal multiline group → shared alternatives
+
+`blender/group_fork.py` adds **one** bounded helper, `CoequalGroupFork`: a complete rectangular group, one common stem and two or more outgoing reveal arrows. Unlike `Conjunction` (many required inputs → one output), this represents **one equal-status list → multiple alternatives**. Both branches apply to every list member, including the upper line of a wrapped label. It asserts neither exclusivity nor causation, necessity, sufficiency or equal probability. Keep those meanings in explicit scene-specific wording.
+
+```python
+from group_fork import CoequalGroupFork
+fork = CoequalGroupFork(
+    "Shared list", ("Alpha", "Beta", "Gamma", "Delta", "Epsilon"),
+    rows=((0, 1, 2), (3, 4)), bounds=(-2.6, .5, 2.6, 1.8),
+    junction=(0, 0, -.15), targets=((-2, 0, -1.65), (2, 0, -1.65)),
+    mat=teal, warning_mat=red)
+fork.update(1)
+# fork.label_rows returns text, exhaustive item indices and LOCAL row anchors.
+# Project anchors through the held camera and composite text in screen space.
+```
+
+Use XZ, +Z up, view from -Y, with an optional common parent. Rows must partition distinct nonempty items exactly once in original order. The junction is below the container and targets below the junction. Supply target points **on destination boundaries**, not node centers. The helper does not create destination nodes, import fonts or auto-fit text; caller-owned composition must check width, occlusion and meaning. Original `Human`-style anatomy/gait is already covered by `Actor`, so no second person implementation or replacement static library is added.
+
+Run the new generic proof (Python 3/Pillow, no externally supplied font needed):
+
+```sh
+python tests/group_fork_proof.py \
+  --blender /path/to/blender \
+  --lock /path/to/shared-render.lock \
+  --out /path/to/fresh-group-proof
+```
+
+The launcher uses the same nonblocking shared-lock policy as the original proof below (busy exit 73, no output directory). It produces four native 1280×720 Workbench AA16 PNGs at phases 0, .45, 1, .45, screen-space English labels and reports. Tests reject eight malformed memberships/layouts without leaving geometry, check all five members, closed boundary/common stem, both actual arrow tips attached to visible destination sphere tops under a translated parent, sampled bounds, frozen camera and reverse-seek transforms. The repeated phase has zero decoded RGB difference on the tested machine (PNG hashes can differ due to metadata); start-to-settled mean pixel difference is 1.015333839699074. `tests/group-fork-proof-summary.json` and `previews/group-fork-contact.png` preserve the measured record. One full-size settled frame was visually checked; this is **not** continuous-animation, source-fidelity, reading-time or user aesthetic approval. Existing six-frame hybrid regressions also ran unchanged.
+
 ## Run the real offline proof
 
 Dependencies: Blender 4.5+ (tested 4.5.14 LTS), Python 3, Pillow, a separately installed Korean-capable font. On Linux/macOS the runner uses `fcntl.flock`. No downloads or network access are required by the code.

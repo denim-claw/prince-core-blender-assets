@@ -1,0 +1,352 @@
+{
+  "status": "PASS",
+  "blender": "4.5.14 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "AA": 16,
+  "resolution": [
+    1280,
+    720
+  ],
+  "shadows": true,
+  "cavity": true,
+  "items": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "Delta",
+    "Epsilon"
+  ],
+  "rows": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "branch_scope": [
+    [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Delta",
+      "Epsilon"
+    ],
+    [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Delta",
+      "Epsilon"
+    ]
+  ],
+  "rejected_invalid_specs": 8,
+  "max_endpoint_error": 3.5886748369909214e-07,
+  "reverse_transform_seek": "PASS",
+  "sampled_bounds": "PASS",
+  "camera_signature": [
+    0.25,
+    -20.0,
+    0.0,
+    1.5707963705062866,
+    -0.0,
+    0.0,
+    9.0,
+    50.0
+  ],
+  "frames": [
+    {
+      "file": "native-00.png",
+      "phase": 0,
+      "sha256": "f521d4878d9385f6bae908e7a80d306c797c47612ed15d77ee9b5b074e0b3f35",
+      "seconds": 0.5504951141774654
+    },
+    {
+      "file": "native-01.png",
+      "phase": 0.45,
+      "sha256": "f8e5835be59fd696411aaadcb4dec780caceaf9a4102aaa0f291e0779b126f48",
+      "seconds": 0.2434814814478159
+    },
+    {
+      "file": "native-02.png",
+      "phase": 1,
+      "sha256": "b87a1a26c5ec256516e074ae70cab4522903b4c24fb2dbddd3957411e4b51522",
+      "seconds": 0.22178536094725132
+    },
+    {
+      "file": "native-03.png",
+      "phase": 0.45,
+      "sha256": "19df71e1ff05bdeec3f0f7c067e61dfc04b821310fbc4b809feea5af1fdd589d",
+      "seconds": 0.2246471308171749
+    }
+  ],
+  "labels": [
+    {
+      "text": "Alpha / Beta / Gamma",
+      "xy": [
+        640.0,
+        136.0000991821289
+      ]
+    },
+    {
+      "text": "Delta / Epsilon",
+      "xy": [
+        640.0,
+        228.4445571899414
+      ]
+    },
+    {
+      "text": "Option A",
+      "xy": [
+        355.5555725097656,
+        637.3334437608719
+      ]
+    },
+    {
+      "text": "Option B",
+      "xy": [
+        924.4444274902344,
+        637.3334437608719
+      ]
+    }
+  ],
+  "composed_frames": [
+    {
+      "file": "labelled-native-00.png",
+      "phase": 0,
+      "sha256": "f7ddbc967f561bb78da7b83edcccb0e284962835b00e6d3fcfe6702648e64ab0",
+      "text_boxes": [
+        [
+          392,
+          34,
+          888,
+          64
+        ],
+        [
+          496.0,
+          125.0000991821289,
+          783.0,
+          155.0000991821289
+        ],
+        [
+          543.0,
+          218.4445571899414,
+          737.0,
+          247.4445571899414
+        ],
+        [
+          295.5555725097656,
+          628.3334437608719,
+          415.5555725097656,
+          656.3334437608719
+        ],
+        [
+          864.4444274902344,
+          628.3334437608719,
+          984.4444274902344,
+          656.3334437608719
+        ],
+        [
+          379,
+          664,
+          900,
+          694
+        ]
+      ]
+    },
+    {
+      "file": "labelled-native-01.png",
+      "phase": 0.45,
+      "sha256": "34bdf8a874c34f8d09b5299802bff023d3e8eadea377ed6bff195f211574f5b0",
+      "text_boxes": [
+        [
+          392,
+          34,
+          888,
+          64
+        ],
+        [
+          496.0,
+          125.0000991821289,
+          783.0,
+          155.0000991821289
+        ],
+        [
+          543.0,
+          218.4445571899414,
+          737.0,
+          247.4445571899414
+        ],
+        [
+          295.5555725097656,
+          628.3334437608719,
+          415.5555725097656,
+          656.3334437608719
+        ],
+        [
+          864.4444274902344,
+          628.3334437608719,
+          984.4444274902344,
+          656.3334437608719
+        ],
+        [
+          379,
+          664,
+          900,
+          694
+        ]
+      ]
+    },
+    {
+      "file": "labelled-native-02.png",
+      "phase": 1,
+      "sha256": "ad069f1549e99b262b80d32f4603aa68443498c56334c4113935df3f688d834f",
+      "text_boxes": [
+        [
+          392,
+          34,
+          888,
+          64
+        ],
+        [
+          496.0,
+          125.0000991821289,
+          783.0,
+          155.0000991821289
+        ],
+        [
+          543.0,
+          218.4445571899414,
+          737.0,
+          247.4445571899414
+        ],
+        [
+          295.5555725097656,
+          628.3334437608719,
+          415.5555725097656,
+          656.3334437608719
+        ],
+        [
+          864.4444274902344,
+          628.3334437608719,
+          984.4444274902344,
+          656.3334437608719
+        ],
+        [
+          379,
+          664,
+          900,
+          694
+        ]
+      ]
+    },
+    {
+      "file": "labelled-native-03.png",
+      "phase": 0.45,
+      "sha256": "34bdf8a874c34f8d09b5299802bff023d3e8eadea377ed6bff195f211574f5b0",
+      "text_boxes": [
+        [
+          392,
+          34,
+          888,
+          64
+        ],
+        [
+          496.0,
+          125.0000991821289,
+          783.0,
+          155.0000991821289
+        ],
+        [
+          543.0,
+          218.4445571899414,
+          737.0,
+          247.4445571899414
+        ],
+        [
+          295.5555725097656,
+          628.3334437608719,
+          415.5555725097656,
+          656.3334437608719
+        ],
+        [
+          864.4444274902344,
+          628.3334437608719,
+          984.4444274902344,
+          656.3334437608719
+        ],
+        [
+          379,
+          664,
+          900,
+          694
+        ]
+      ]
+    }
+  ],
+  "start_settled_pixel_delta": 1.015333839699074,
+  "reverse_rerender_pixel_delta": 0.0,
+  "contact_sha256": "f80235181aea33b5e6b0b29efa6ca8ff03e1bc40ee1d7da81242b8f85e27492c",
+  "source_sha256": {
+    "blender/group_fork.py": "e36702ebd14e3799309f4ec15ceddf3267bd78f8d430b344506ff45c126a793f",
+    "tests/group_fork_proof.py": "b0c42a43b554bd06e2211f38c1b8a895f0678edebf7dd39b4cc584c7414d7908",
+    "blender/hybrid_stage.py": "8bc4167b6db3ce539df42eb9a9c280f10ac97736b78f3c8e6d0ef7ab076fd143"
+  },
+  "limits": [
+    "four sampled stills (one repeated phase), not continuous animation",
+    "group membership and attachment tested, not source fidelity or causal logic",
+    "no automatic font fit/occlusion solver; caller supplies labels/targets",
+    "no full-user/aesthetic/phone reading-time approval"
+  ],
+  "visual_review": {
+    "reviewer": "vision_analyze",
+    "reviewed": [
+      "current labelled-native-02.png, full 1280x720"
+    ],
+    "current_settled_status": "PASS: five names in common rectangle; shared stem serves both alternatives; tips meet visible destination sphere tops; no clipping/overlap",
+    "scope": "one current full-size settled frame only; no continuous animation/source/reading-time approval"
+  },
+  "render_lock": {
+    "busy_exit": 73,
+    "busy_created_output": false,
+    "policy": "shared LOCK_EX|LOCK_NB, no wait"
+  },
+  "reuse_audit": {
+    "included": "generic CoequalGroupFork with exhaustive ordered item membership, multiline row anchors, shared stem and multiple outgoing alternatives",
+    "not_duplicated": [
+      "procedural Human: adult proportions, shoulder pivots and leg posing already provided by Actor",
+      "material/sphere/cube/rod helpers: existing public primitive coverage",
+      "hybrid_stage: byte-identical to existing public toolkit",
+      "production composer: not exported; chapter font/source/layout dependencies"
+    ],
+    "release_boundary": "all third-party animals/rigs and packed production scenes remain excluded; no source/book text, storyboard, speech, audio/video, private paths or credentials"
+  },
+  "fresh_portable_replay": {
+    "status": "PASS",
+    "inputs": [
+      "blender/group_fork.py",
+      "blender/hybrid_stage.py",
+      "tests/group_fork_proof.py"
+    ],
+    "native_frames": 4,
+    "decoded_RGB_mean_deltas_against_recorded_proof": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "scope": "same machine, fresh directory, factory-startup; no production imports"
+  },
+  "existing_asset_regression": {
+    "hybrid_native_frames": 6,
+    "abstract_pixel_delta": 0.4973994502314814,
+    "concrete_pixel_delta": 1.1600531684027777,
+    "manifest_hash_entries_checked": 21,
+    "fresh_factory_appended_collections": 12,
+    "unchanged_existing_files": 21,
+    "scope": "all pre-existing tracked files except the four intended documentation/manifest edits stay byte-identical"
+  }
+}
