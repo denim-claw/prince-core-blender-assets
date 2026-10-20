@@ -1,13 +1,14 @@
 {
   "name": "Prince Core Blender Assets",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "privacy": "public-safe original generic toolkit/preview; excludes production scenes, book text, storyboard, narration, audio/video, private model data and credentials",
   "blender": "4.5.14 LTS build tested",
   "licenses": {
     "original_procedural_code_and_generated_people_props": "MIT (root LICENSE)",
     "fire_flipbooks": "CC0-1.0 (textures/fire-cc0/CC0-1.0.txt; per-asset source and converted hashes in manifest.json)",
     "native_hybrid_toolkit_and_generic_preview": "MIT (root LICENSE); font software not bundled",
-    "coequal_group_fork": "MIT (root LICENSE); proof uses separately installed Pillow default font, no font software bundled"
+    "coequal_group_fork": "MIT (root LICENSE); proof uses separately installed Pillow default font, no font software bundled",
+    "flow_diversion": "MIT (root LICENSE); original procedural geometry, no bundled fonts"
   },
   "libraries": {
     "blender/prince-core-people.blend": {
@@ -55,6 +56,14 @@
     "tests/group_fork_proof.py": {
       "bytes": 11485,
       "sha256": "b0c42a43b554bd06e2211f38c1b8a895f0678edebf7dd39b4cc584c7414d7908"
+    },
+    "blender/flow_diversion.py": {
+      "bytes": 4264,
+      "sha256": "84e5b25daa0d60dd3036ef791a95008d2dafae557f382da5d16ad320572daf37"
+    },
+    "tests/flow_diversion_proof.py": {
+      "bytes": 4670,
+      "sha256": "89ff936df0a574ca287e3d1a78c263574f28fa2f0564347da9acc4bffe445eed"
     }
   },
   "previews": {
@@ -73,6 +82,10 @@
     "previews/group-fork-contact.png": {
       "bytes": 92008,
       "sha256": "f80235181aea33b5e6b0b29efa6ca8ff03e1bc40ee1d7da81242b8f85e27492c"
+    },
+    "previews/flow-diversion-contact.png": {
+      "bytes": 118839,
+      "sha256": "f021f539d8fe8289ac56628f7c1f74552bd545f4a684757817637845d33e1328"
     }
   },
   "fire_assets": {
@@ -108,7 +121,8 @@
     "group_fork": "PASS: four native 1280x720 AA16 stills (one repeated phase), 8 invalid partitions/layouts rejected; exhaustive five-item membership; translated common parent; settled visible destination attachment max error 3.5886748369909214e-07",
     "group_fork_seek": "PASS: reverse transforms; repeated phase decoded RGB mean difference 0.0; sampled pixel change 1.015333839699074",
     "hybrid_regression": "PASS: existing six-frame native proof rerun unchanged; abstract/concrete mean pixel deltas 0.4973994502314814 / 1.1600531684027777",
-    "group_fork_portability": "PASS: fresh three-file copy, factory-startup replay; four native frames RGB-identical on the same machine"
+    "group_fork_portability": "PASS: fresh three-file copy, factory-startup replay; four native frames RGB-identical on the same machine",
+    "flow_diversion": "PASS: isolated three-file copy, three native 1280x720 Workbench AA16 stills; two connected indexed surfaces, four invalid phases rejected, reverse-seek geometry/visibility restoration, held camera and final spill endpoint. No fluid simulation, continuous-motion or visual-approval claim."
   },
   "verification_files": {
     "tests/hybrid-proof-summary.json": {
@@ -118,6 +132,10 @@
     "tests/group-fork-proof-summary.json": {
       "bytes": 8312,
       "sha256": "4ba3940362b9fc6396eff90c639b24b8943f69b4e90a4886e099c2f7a72d5426"
+    },
+    "tests/flow-diversion-proof-summary.json": {
+      "bytes": 1263,
+      "sha256": "33467f653c145e37d3323f09413592d33389d63da295f07c9daaee4a4fd9c59c"
     }
   }
 }

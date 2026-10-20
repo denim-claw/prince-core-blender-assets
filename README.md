@@ -81,6 +81,32 @@ python tests/group_fork_proof.py \
 
 The launcher uses the same nonblocking shared-lock policy as the original proof below (busy exit 73, no output directory). It produces four native 1280×720 Workbench AA16 PNGs at phases 0, .45, 1, .45, screen-space English labels and reports. Tests reject eight malformed memberships/layouts without leaving geometry, check all five members, closed boundary/common stem, both actual arrow tips attached to visible destination sphere tops under a translated parent, sampled bounds, frozen camera and reverse-seek transforms. The repeated phase has zero decoded RGB difference on the tested machine (PNG hashes can differ due to metadata); start-to-settled mean pixel difference is 1.015333839699074. `tests/group-fork-proof-summary.json` and `previews/group-fork-contact.png` preserve the measured record. One full-size settled frame was visually checked; this is **not** continuous-animation, source-fidelity, reading-time or user aesthetic approval. Existing six-frame hybrid regressions also ran unchanged.
 
+## Connected flow and residual overflow
+
+`blender/flow_diversion.py` provides `FlowDiversion(water_material, bank_material,
+sill_material)`: a single indexed L-shaped inlet/turn/outlet plus a separately
+connected landward branch over a lowered bank. Call `update(p, visible=True)` with
+finite `p` in [0,1]. Normal drainage and overflow have distinct `label_anchors` for
+caller-owned screen-space labels. Reverse seeks restore geometry and visibility.
+Import does not clear the caller's scene. Requires only Blender and `hybrid_stage.py`.
+
+This is a fixed-layout kinematic illustration, **not fluid simulation**, flood-risk
+estimation, or proof of tree contact. No book text, chapter scenes, audio, models or
+private production paths are included. The three native stills in
+`previews/flow-diversion-contact.png` are a technical preview, not visual approval.
+
+```sh
+blender -b --factory-startup --disable-autoexec --python-exit-code 1 \
+  --python tests/flow_diversion_proof.py -- \
+  --out /path/to/fresh-flow-proof --lock /path/to/shared-render.lock
+```
+
+The actual isolated-copy proof rendered 1280x720 Workbench AA16 with shadows/cavity,
+checked both indexed mesh components, rejected four invalid phase values, and
+verified reverse-seek geometry, visibility restoration, held camera and spill-end
+placement. Its measured report is `tests/flow-diversion-proof-summary.json`.
+Continuous motion and independent visual review were not run.
+
 ## Run the real offline proof
 
 Dependencies: Blender 4.5+ (tested 4.5.14 LTS), Python 3, Pillow, a separately installed Korean-capable font. On Linux/macOS the runner uses `fcntl.flock`. No downloads or network access are required by the code.

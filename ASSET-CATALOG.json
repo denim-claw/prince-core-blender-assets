@@ -88,5 +88,23 @@
       "caller supplies destination attachment points and semantic wording",
       "four sampled stills, no continuous animation or source-fidelity approval"
     ]
+  },
+  "flow_diversion": {
+    "module": "blender/flow_diversion.py",
+    "api": [
+      "FlowDiversion",
+      "FlowDiversion.update",
+      "FlowDiversion.label_anchors"
+    ],
+    "license": "MIT",
+    "runner": "tests/flow_diversion_proof.py",
+    "preview": "previews/flow-diversion-contact.png",
+    "verification": "tests/flow-diversion-proof-summary.json",
+    "limitations": [
+      "fixed illustrative coordinates, not a fluid solver",
+      "screen-space labels and camera owned by caller",
+      "three native stills only; visual review NOT_RUN",
+      "no tree/building damage or risk probability model"
+    ]
   }
 }

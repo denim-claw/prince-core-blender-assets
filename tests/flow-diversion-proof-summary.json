@@ -1,0 +1,42 @@
+{
+  "engine": "BLENDER_WORKBENCH",
+  "AA": 16,
+  "shadows": true,
+  "cavity": true,
+  "resolution": [
+    1280,
+    720
+  ],
+  "native_frames": [
+    {
+      "file": "flow-00.png",
+      "phase": 0,
+      "sha256": "6a3a54d9a4c2f5c3676398fa79ea4178d2ef150bb7d90dfd926228ecadac0d35"
+    },
+    {
+      "file": "flow-01.png",
+      "phase": 0.6,
+      "sha256": "2a1dcc6e1633f96a0080e0063e0c45f4517d18a9342eec7a593809e847006ae7"
+    },
+    {
+      "file": "flow-02.png",
+      "phase": 1,
+      "sha256": "9bdde736bbab2b23d9e4a5833ac7a1df4e10ce1ca22116a68f70a65829835b04"
+    }
+  ],
+  "connected_meshes": 2,
+  "invalid_inputs_rejected": 4,
+  "reverse_seek_geometry": "PASS",
+  "visibility_restore": "PASS",
+  "held_camera": "PASS",
+  "final_branch_endpoint": "PASS",
+  "fluid_simulation": false,
+  "source_fidelity": "NOT_APPLICABLE: generic asset",
+  "visual_review": "NOT_RUN",
+  "continuous_motion": "NOT_RUN: three native stills",
+  "source_hashes": {
+    "blender/flow_diversion.py": "84e5b25daa0d60dd3036ef791a95008d2dafae557f382da5d16ad320572daf37",
+    "blender/hybrid_stage.py": "8bc4167b6db3ce539df42eb9a9c280f10ac97736b78f3c8e6d0ef7ab076fd143",
+    "tests/flow_diversion_proof.py": "89ff936df0a574ca287e3d1a78c263574f28fa2f0564347da9acc4bffe445eed"
+  }
+}
