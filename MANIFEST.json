@@ -1,11 +1,12 @@
 {
   "name": "Prince Core Blender Assets",
-  "version": "1.0.0",
-  "privacy": "public-safe subset; excludes private animal models, chapter-specific assets, narration, videos and credentials",
+  "version": "1.1.0",
+  "privacy": "public-safe original generic toolkit/preview; excludes production scenes, book text, storyboard, narration, audio/video, private model data and credentials",
   "blender": "4.5.14 LTS build tested",
   "licenses": {
     "original_procedural_code_and_generated_people_props": "MIT (root LICENSE)",
-    "fire_flipbooks": "CC0-1.0 (textures/fire-cc0/CC0-1.0.txt; per-asset source and converted hashes in manifest.json)"
+    "fire_flipbooks": "CC0-1.0 (textures/fire-cc0/CC0-1.0.txt; per-asset source and converted hashes in manifest.json)",
+    "native_hybrid_toolkit_and_generic_preview": "MIT (root LICENSE); font software not bundled"
   },
   "libraries": {
     "blender/prince-core-people.blend": {
@@ -27,8 +28,24 @@
       "sha256": "8dbdcfd14f932c5910e7670d55387a9f41157ea6f5c4daf7c836ae06a69720df"
     },
     "blender/append_assets.py": {
-      "bytes": 1244,
-      "sha256": "5b3b4e93f82fef19f6fecd9d7dec64ec18bda884502bc2c0652149f236dfa088"
+      "bytes": 1246,
+      "sha256": "8fb3fc7b751317aaeb20d2071677d9928cf4264edce26b075c75b2b7fcf1e30c"
+    },
+    "blender/hybrid_stage.py": {
+      "bytes": 11181,
+      "sha256": "8bc4167b6db3ce539df42eb9a9c280f10ac97736b78f3c8e6d0ef7ab076fd143"
+    },
+    "blender/demo_hybrid.py": {
+      "bytes": 10376,
+      "sha256": "b61baa25528fd588bc8432b7413913d24e63a28addbba929b8d0e8087bd4ab4f"
+    },
+    "run_hybrid_proof.py": {
+      "bytes": 6446,
+      "sha256": "5b5a03b7b54be49c55d996cb6d3e5a7d54c40b5c5eb8042d5b1170ce2bcf4bf0"
+    },
+    "verify_library.py": {
+      "bytes": 1251,
+      "sha256": "d062c8608930d4de06402e44c1cf65b95651f4c9d9b011c294aae543d618178e"
     }
   },
   "previews": {
@@ -39,6 +56,10 @@
     "previews/props-contact.png": {
       "bytes": 737364,
       "sha256": "aeb74d116b7e0847b72258e2161b37fef2291083f6acc60affee3e72f5100176"
+    },
+    "previews/hybrid-contact.png": {
+      "bytes": 231347,
+      "sha256": "e79f2cd7a0ded792b520e90efc17c125a1503afb9d32e426682b62ac35d4e8d8"
     }
   },
   "fire_assets": {
@@ -60,8 +81,22 @@
     }
   },
   "validation": {
-    "fresh_factory_append": "PASS on source revision before public packaging; rerun ./verify_library.py for packaged copy",
-    "natural_gait": "not claimed",
-    "full_chapter_render": "not claimed"
+    "fresh_factory_append": "PASS: all 12 original collections appended in a fresh factory-startup Blender 4.5.14 process; 17 manifest entries hash-checked",
+    "hybrid_proof": "PASS: six native 1280x720 Workbench AA16 stills + six screen-labelled PNGs; see hashed proof summary",
+    "camera": "PASS: held signatures and sampled mesh bounds at rendered phases",
+    "connector": "PASS: six modes, moving-anchor reverse seeks, conjunction endpoint attachment; max endpoint error 3.04085511524415e-07",
+    "render_lock": "PASS: LOCK_EX|LOCK_NB; busy exit 73 and no output directory",
+    "sampled_visual_review": "PASS six contact-sheet samples; rough roof/modest approach limits retained",
+    "old_asset_binaries": "PASS: 13 original protected files byte-identical to previous revision (libraries, previews, textures/notices, original generators, root license)",
+    "natural_gait": "not claimed; no world-space foot-lock IK",
+    "full_chapter_render": "not claimed",
+    "full_user_qa": "not performed",
+    "continuous_animation": "not rendered; sampled stills only"
+  },
+  "verification_files": {
+    "tests/hybrid-proof-summary.json": {
+      "bytes": 6489,
+      "sha256": "f14f297f4ebcfc2fd2ccc4ad9df839233c7e001c893e2620f11a7c4d207b0a3e"
+    }
   }
 }

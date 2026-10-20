@@ -28,5 +28,44 @@
     "directory": "textures/fire-cc0/",
     "license": "CC0-1.0"
   },
-  "scope": "public-safe, reusable assets only"
+  "scope": "public-safe, reusable assets only",
+  "native_hybrid": {
+    "module": "blender/hybrid_stage.py",
+    "demo": "blender/demo_hybrid.py",
+    "runner": "run_hybrid_proof.py",
+    "license": "MIT",
+    "runtime": "Blender 4.5+, Python 3/Pillow + separately supplied font for proof composition",
+    "api": [
+      "Actor.pose",
+      "Relation.update",
+      "Conjunction.update",
+      "segment",
+      "set_segment",
+      "material",
+      "ease",
+      "held_camera",
+      "fit_held_camera",
+      "camera_signature"
+    ],
+    "relation_modes": [
+      "blocked",
+      "break",
+      "compare",
+      "intact",
+      "require",
+      "reveal"
+    ],
+    "actors": "articulated procedural primitive meshes, not skinned/armature rigs; old people library stays static",
+    "camera": "sampled-motion union fit, held per shot; hard cuts only",
+    "labels": "direct Korean screen-space composition; no numbered badges/legends",
+    "preview": "previews/hybrid-contact.png",
+    "verification": "tests/hybrid-proof-summary.json",
+    "limitations": [
+      "no natural gait or world-space foot-lock IK",
+      "no grasp/contact solver",
+      "fit tests supplied sampled extrema, not continuous motion",
+      "rough starter house roof",
+      "six sampled stills; not full-user QA"
+    ]
+  }
 }

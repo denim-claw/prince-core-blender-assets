@@ -21,5 +21,7 @@ def append_collection(library_path, collection_name, destination=None, link=Fals
     return collection
 
 # Example in Blender Python console:
-# c = append_collection('/home/claw/video-assets/blender/prince-core-kit/prince-core-people.blend', 'White Ruler')
-# c = append_collection('/home/claw/video-assets/blender/prince-core-kit/prince-core-props.blend', 'Net')
+# from pathlib import Path
+# kit = Path('/path/to/this-repository/blender')
+# c = append_collection(str(kit / 'prince-core-people.blend'), 'White Ruler')
+# c = append_collection(str(kit / 'prince-core-props.blend'), 'Net')

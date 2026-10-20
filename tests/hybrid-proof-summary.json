@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "scope": "six sampled stills, not continuous animation or full-user QA",
+  "blender": "4.5.14 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "AA": 16,
+  "shadows": true,
+  "cavity": true,
+  "audio": false,
+  "source_sha256": {
+    "blender/hybrid_stage.py": "8bc4167b6db3ce539df42eb9a9c280f10ac97736b78f3c8e6d0ef7ab076fd143",
+    "blender/demo_hybrid.py": "b61baa25528fd588bc8432b7413913d24e63a28addbba929b8d0e8087bd4ab4f",
+    "blender/narrative_props.py": "8dbdcfd14f932c5910e7670d55387a9f41157ea6f5c4daf7c836ae06a69720df",
+    "run_hybrid_proof.py": "5b5a03b7b54be49c55d996cb6d3e5a7d54c40b5c5eb8042d5b1170ce2bcf4bf0"
+  },
+  "connector_tests": {
+    "modes": [
+      "blocked",
+      "break",
+      "compare",
+      "intact",
+      "require",
+      "reveal"
+    ],
+    "max_endpoint_error": 3.04085511524415e-07,
+    "moving_anchors_reverse_seek": "PASS",
+    "conjunction_attachment": "PASS"
+  },
+  "actor_vertex_displacement": 1.0831455264055878,
+  "camera_and_transform_checks": {
+    "abstract": {
+      "camera_signature": [
+        0.0,
+        -20.0,
+        -0.10376308113336563,
+        1.5707963705062866,
+        -0.0,
+        0.0,
+        17.33769416809082,
+        50.0
+      ],
+      "transform_determinism": "PASS",
+      "bounds": "PASS at phases 0, .5, 1; held fit samples per demo code"
+    },
+    "concrete": {
+      "camera_signature": [
+        0.11252522468566895,
+        -17.84260368347168,
+        9.35413932800293,
+        1.1525719165802002,
+        -0.0,
+        0.0,
+        10.514138221740723,
+        50.0
+      ],
+      "transform_determinism": "PASS",
+      "bounds": "PASS at phases 0, .5, 1; held fit samples per demo code"
+    }
+  },
+  "native_frames": [
+    {
+      "file": "abstract-0.png",
+      "phase": 0,
+      "seconds": 0.3290445636957884,
+      "sha256": "2a031ac2b12c3e5707da603e449d81a0e8c8a1276e1d02442fe0f2cc5838f3e5"
+    },
+    {
+      "file": "abstract-1.png",
+      "phase": 0.5,
+      "seconds": 0.14480919390916824,
+      "sha256": "d0646fb6be56cff4669c6af0d3a085ee735602b5bd4cd5bacca0090a9715f5b7"
+    },
+    {
+      "file": "abstract-2.png",
+      "phase": 1,
+      "seconds": 0.13725713826715946,
+      "sha256": "5624823f265d09d128de9bd9dec1a2713788e2fe29e8626f57bd13ee0aa10bce"
+    },
+    {
+      "file": "concrete-0.png",
+      "phase": 0,
+      "seconds": 0.4181828051805496,
+      "sha256": "bfdb2cf9a487c3e4509751bf4ecd40e894a27172c1d80b81249b16aa20faa508"
+    },
+    {
+      "file": "concrete-1.png",
+      "phase": 0.5,
+      "seconds": 0.3470384292304516,
+      "sha256": "4b057cb9e5191df12ce675583d8f3df3ebf6d544e966526ef962e26d48bd5a16"
+    },
+    {
+      "file": "concrete-2.png",
+      "phase": 1,
+      "seconds": 0.34923065826296806,
+      "sha256": "88428cfc75e8f67febff0d2734bde5b4e702fa58ed24b941ad6b2e4f1e51c175"
+    }
+  ],
+  "composed_frames": [
+    {
+      "file": "labelled-abstract-0.png",
+      "sha256": "88bb57384aab54377bd7f9b43db230d1a013a5c2b8e965583d4e0ffb457e78b0"
+    },
+    {
+      "file": "labelled-abstract-1.png",
+      "sha256": "85ae661fb5065b9fa5afb33531c5916f80a69a60736a1c747609b188cfaed7fd"
+    },
+    {
+      "file": "labelled-abstract-2.png",
+      "sha256": "f9f22adb3d0b689e2b8c2629f4cf95673381f8956db5015da88ffbb3f009a7cb"
+    },
+    {
+      "file": "labelled-concrete-0.png",
+      "sha256": "d5008e96db0f3cf646a8190f93e06a334fe8bf1c3d535fcc3fbcf5d2db346778"
+    },
+    {
+      "file": "labelled-concrete-1.png",
+      "sha256": "09d2d009ed072e205846b09703d0d17bcd9773516a5294d2e01f936f99023aff"
+    },
+    {
+      "file": "labelled-concrete-2.png",
+      "sha256": "5fef170902b6d3257b80d4f1bd0d3a28c5ed4daa4a02ab74657a06420cafd703"
+    }
+  ],
+  "motion_samples": [
+    {
+      "shot": "abstract",
+      "native_start_end_mean_pixel_delta": 0.4973994502314814
+    },
+    {
+      "shot": "concrete",
+      "native_start_end_mean_pixel_delta": 1.1600531684027777
+    }
+  ],
+  "screen_text_checks": "PASS: bounds, nonoverlap, nonmissing Hangul glyphs; exact PNGs fully decoded",
+  "font": {
+    "filename": "NotoSansCJK-Regular.ttc",
+    "index": 1,
+    "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  "preview": {
+    "file": "previews/hybrid-contact.png",
+    "bytes": 231347,
+    "sha256": "e79f2cd7a0ded792b520e90efc17c125a1503afb9d32e426682b62ac35d4e8d8"
+  },
+  "busy_lock_test": {
+    "exit_code": 73,
+    "message": "RENDER_NOT_RUN: shared lock busy",
+    "output_created": false
+  },
+  "sampled_visual_review": {
+    "artifact": "previews/hybrid-contact.png",
+    "sample_count": 6,
+    "result": "PASS sampled readability, gap/X, arrowless conjunction, actor approach; no text collision/crop found",
+    "method": "image review of final six-sample contact sheet",
+    "limits": [
+      "rough raised/split starter roof",
+      "modest approach; no arrival or contact shown",
+      "no full-animation or full-user approval"
+    ]
+  },
+  "limits": [
+    "six sampled stills, not a continuous animation",
+    "no full-user QA or aesthetic approval",
+    "no natural foot-lock IK or contact/grasp validation",
+    "fit covers supplied sampled extrema only"
+  ],
+  "release_boundary": "original generic code and raster preview only; no source production scene, book text, storyboard, narration, audio, video, private model data or source blend",
+  "supervisor_review": {
+    "technical_replay": "PASS: fresh native six-frame proof and fresh factory append independently rerun",
+    "visual_scope": "six-sample contact sheet only; not continuous animation",
+    "disposition": "sampled toolkit usable with documented limitations, not blanket aesthetic approval",
+    "observations": [
+      "Absent or incomplete necessary-condition links at phases 0 and 0.5 are intentional progressive reveals; phase 1 is the settled endpoint test.",
+      "Settled endpoint attachment passed numerical tests; dotted necessary-condition links can still be confused with the separate broken-link vocabulary.",
+      "Direct labels are readable in the contact sheet; fast phone-size qualifier reading is not established by these stills.",
+      "Concrete proof shows only a modest approach, not arrival, grasp or natural gait."
+    ]
+  },
+  "actor_limb_local_displacement": 0.006726795923587544,
+  "original_asset_audit": {
+    "protected_files_byte_identical": 13,
+    "no_new_source_blend_audio_video": true,
+    "private_paths_or_key_pattern_hits": 0,
+    "fresh_factory_append_collections": 12
+  }
+}
